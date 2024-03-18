@@ -1,0 +1,11 @@
+
+.hombreContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh
+    
+}
