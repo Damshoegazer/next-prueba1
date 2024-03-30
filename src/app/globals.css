@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  
-} */
+:root {
+  background-color: rgb(247, 247, 247);
+}
 
 
 
 /* body {
   
-} */
-
+}
+ */
 * {
   margin: 0;
   padding: 0;

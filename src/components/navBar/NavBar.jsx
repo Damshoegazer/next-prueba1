@@ -6,7 +6,7 @@ import './navBar.css'
 const NavBar = () => {
     return(
         <div className="containerNav">
-            {/* <TopNav /> */}
+        
             <Links />
             <div className="flex ml-60 gap-10"  /* style={{display:"flex",gap:"50px", alignItems:"center", marginLeft:"200px"}} */>
                 <InputSearch />

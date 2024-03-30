@@ -3,6 +3,7 @@
 .containerNav {
     width: 100%;
     height: 12vh;
+    z-index: 100;
     background-color: rgb(255, 255, 255);
     display: flex;
     /* flex-direction: column; */
@@ -18,6 +19,10 @@
 .linksStyle {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 5px;
     padding-top: 18px;
+}
+
+.linkPrueba {
+    font-size: 100px;
 }
