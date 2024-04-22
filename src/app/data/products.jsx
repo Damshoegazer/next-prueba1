@@ -229,7 +229,7 @@ export const mockData = [
       description: "Conjunto deportivo Nike para hombre",
       inStock: 100,
       price: 64.99,
-      slug: "chandal-nike26s",
+      slug: "chandal-nike26",
       image: "https://i.ibb.co/3f13wyt/NI-CZ2217-058-1.jpg",
       type: "chándals"
     }
