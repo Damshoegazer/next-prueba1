@@ -1,4 +1,4 @@
-/* import Link from "next/link"
+import Link from "next/link"
 
 const getPosts = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/posts', { 
@@ -37,4 +37,4 @@ const Posts = async () => {
     )
 }
 
-export default Posts */
+export default Posts

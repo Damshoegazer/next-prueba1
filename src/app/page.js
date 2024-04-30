@@ -1,6 +1,4 @@
 
-
-import ImageHome from "@/components/imagenes/imageHome";
 import Image from "next/image";
 import './home.css'
 import Link from "next/link";
@@ -10,7 +8,7 @@ import {mockData} from '@/app/data/products'
 
 export default function Home() {
 
-  /* const FiltItems = mockData.FiltItems((mockDat) => {}) */
+
 
   return (
     
@@ -18,10 +16,7 @@ export default function Home() {
     <div className="homeContainer bg-gray-100 ">
       
       <div style={{display:"flex", width:"100%", marginTop:"50px", padding:"20px", }}>
-        <ImageHome 
-        image= "https://i.ibb.co/6FLRGm2/Frame-41.png"
-        
-        />           
+          <Image src="https://i.ibb.co/6FLRGm2/Frame-41.png" alt="imagen home" width={1500} height={1500}/>
       </div>
       <div>
       <svg width="681" height="65" viewBox="0 0 681 65" fill="none" xmlns="http://www.w3.org/2000/svg">
