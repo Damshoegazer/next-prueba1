@@ -9,6 +9,7 @@ export const useCartContext = () => useContext(CartContext);
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
 
+    /* LOCAL STORAGE */
     useEffect(() => {
         const storedCart = localStorage.getItem('cart');
         if (storedCart) {

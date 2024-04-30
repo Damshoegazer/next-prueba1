@@ -1,4 +1,4 @@
-/* 'use client'
+'use client'
 
 import Boton from '@/components/ui/Boton'
 import { useEffect } from 'react'
@@ -16,4 +16,4 @@ export default function Error({ error, reset }) {
             <Boton onClick={reset}>Intentar nuevamente</Boton>
         </div>
     )
-} */
+}

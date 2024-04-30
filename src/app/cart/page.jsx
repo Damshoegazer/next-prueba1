@@ -5,7 +5,7 @@ import { useCartContext } from "@/components/context/CartContext"
 
 const CartPage = () => {
     const { cart } = useCartContext()
-
+ 
     return (
         <div className="pt-56">
             <h2>Tu compra</h2>
@@ -18,4 +18,4 @@ const CartPage = () => {
     )
 }
 
-export default CartPage
+export default CartPage;
