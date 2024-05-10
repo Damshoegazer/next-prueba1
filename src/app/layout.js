@@ -3,7 +3,7 @@ import "./globals.css";
 import NavBar from "@/components/navBar/NavBar";
 /* import TopNav from "@/components/navBar/topNav/TopNav"; */
 import { CartProvider } from "@/components/context/CartContext";
-
+import { AuthProvider } from '@/components/context/AuthContext'
 
 
 export const metadata = {
@@ -15,10 +15,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-      <CartProvider>
-        <NavBar />
-        {children}
-        </CartProvider>
+        <AuthProvider>
+          <CartProvider>
+            <NavBar />
+            {children}
+          </CartProvider>
+        </AuthProvider>
       </body>
     </html>
   );

@@ -10,7 +10,8 @@ const CartItem = ({item}) => {
         removeFromCart(item.slug);
     };
     return (
-        <li className="shadow flex justify-between items-center max-w-xl gap-6 p-4 my-4">
+        <div className="w-[40vw] flex justify-center items-center">
+        <li className="shadow flex justify-between items-center w-[30vw] gap-6 p-4 my-4">
             <Image
                 src={item.image}
                 alt={item.title}
@@ -23,10 +24,11 @@ const CartItem = ({item}) => {
                 <p className="text-sm">Cantidad: {item.quantity}</p>
             </div>
 
-            <Boton className="bg-red-600" onClick={handleRemoveItem}>
+            <Boton className="bg-pink-800" onClick={handleRemoveItem}>
                 <TrashSvg />
             </Boton>
         </li>
+        </div>
     )
 }
 

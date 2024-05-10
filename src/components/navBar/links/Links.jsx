@@ -22,15 +22,7 @@ const Links = () => {
             href: "/productos/todos"
 
         },
-        {
-            label: "Hombre",
-            href: "/hombre"
-
-        },
-        {
-            label: "Mujer",
-            href: "/mujer"
-        }
+        
     ]
 
     
