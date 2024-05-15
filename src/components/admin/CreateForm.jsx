@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from 'next/navigation'
 import Boton from "../ui/Boton"
 import { doc, setDoc } from "firebase/firestore"
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage"
@@ -28,6 +29,7 @@ const CreateForm = () => {
         slug: '' 
     })
     const [file, setFile] = useState(null)
+    const router = useRouter()
 
     const handleChange = (e) => {
         setValues({
@@ -39,6 +41,9 @@ const CreateForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         await createProduct(values, file)
+        setTimeout(() => {
+            router.push('/productos/todos')
+        }, 500)
     }
 
     

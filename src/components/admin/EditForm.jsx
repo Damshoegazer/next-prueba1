@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from 'next/navigation'
 import Boton from "../ui/Boton"
 import { db, storage } from "@/firebase/config"
 import { doc, updateDoc } from "firebase/firestore"
@@ -32,6 +33,7 @@ const EditForm = ({ item }) => {
     const { title, description, inStock, price, type, image } = item
     const [values, setValues] = useState({ title, description, inStock, price, type, image })
     const [file, setFile] = useState(null)
+    const router = useRouter()
 
     const handleChange = (e) => {
         setValues({
@@ -44,6 +46,9 @@ const EditForm = ({ item }) => {
         e.preventDefault()
 
         await updateProduct(item.slug, values, file)
+        setTimeout(() => {
+            router.push('/productos/todos')
+        }, 500)
     }
 
     return (
